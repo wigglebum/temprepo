@@ -12,6 +12,7 @@
 		C2181D3D19EA106500AB6857 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2181D3C19EA106500AB6857 /* Images.xcassets */; };
 		C2181D4019EA106500AB6857 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2181D3E19EA106500AB6857 /* MainMenu.xib */; };
 		C2181D4C19EA106500AB6857 /* StatusItemNSViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2181D4B19EA106500AB6857 /* StatusItemNSViewTests.m */; };
+		C2181D5A19EA203600AB6857 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2181D5919EA203600AB6857 /* StatusItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		C2181D4519EA106500AB6857 /* StatusItemNSViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusItemNSViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2181D4A19EA106500AB6857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2181D4B19EA106500AB6857 /* StatusItemNSViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusItemNSViewTests.m; sourceTree = "<group>"; };
+		C2181D5819EA203600AB6857 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
+		C2181D5919EA203600AB6857 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 			children = (
 				C2181D3919EA106500AB6857 /* AppDelegate.h */,
 				C2181D3A19EA106500AB6857 /* AppDelegate.m */,
+				C2181D5819EA203600AB6857 /* StatusItemView.h */,
+				C2181D5919EA203600AB6857 /* StatusItemView.m */,
 				C2181D3C19EA106500AB6857 /* Images.xcassets */,
 				C2181D3E19EA106500AB6857 /* MainMenu.xib */,
 				C2181D3519EA106500AB6857 /* Supporting Files */,
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2181D5A19EA203600AB6857 /* StatusItemView.m in Sources */,
 				C2181D3B19EA106500AB6857 /* AppDelegate.m in Sources */,
 				C2181D3819EA106500AB6857 /* main.m in Sources */,
 			);
@@ -328,6 +334,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = StatusItemNSView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,6 +346,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = StatusItemNSView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -358,6 +366,7 @@
 				);
 				INFOPLIST_FILE = StatusItemNSViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusItemNSView.app/Contents/MacOS/StatusItemNSView";
 			};
@@ -374,6 +383,7 @@
 				);
 				INFOPLIST_FILE = StatusItemNSViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusItemNSView.app/Contents/MacOS/StatusItemNSView";
 			};
@@ -398,6 +408,7 @@
 				C2181D5119EA106500AB6857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2181D5219EA106500AB6857 /* Build configuration list for PBXNativeTarget "StatusItemNSViewTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +417,7 @@
 				C2181D5419EA106500AB6857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

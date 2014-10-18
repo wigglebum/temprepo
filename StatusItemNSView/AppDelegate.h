@@ -1,15 +1,13 @@
-//
-//  AppDelegate.h
-//  StatusItemNSView
-//
-//  Created by Venkat on 12/10/14.
-//  Copyright (c) 2014 Gudapati Naga Venkata Chaitanya. All rights reserved.
-//
+
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject
 
+@property(strong, nonatomic)NSStatusItem *statusItem;
+
+@property (weak) IBOutlet NSMenu *menu;
+- (IBAction)quit:(NSMenuItem *)sender;
 
 @end
 

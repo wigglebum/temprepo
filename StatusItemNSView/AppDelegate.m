@@ -1,16 +1,10 @@
-//
-//  AppDelegate.m
-//  StatusItemNSView
-//
-//  Created by Venkat on 12/10/14.
-//  Copyright (c) 2014 Gudapati Naga Venkata Chaitanya. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
+#import "StatusItemView.h"
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
@@ -22,5 +16,21 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
+- (void)awakeFromNib
+{
+    // Create an NSStatusItem.
+    float width = 30.0;
+    float height = [[NSStatusBar systemStatusBar] thickness];
+    NSRect viewFrame = NSMakeRect(0, 0, width, height);
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:width];
+    [self.statusItem setView:[[StatusItemView alloc] initWithFrame:viewFrame controller:self]];
+}
+
+- (IBAction)quit:(NSMenuItem *)sender {
+    [NSApp terminate:nil];
+}
+
+
 
 @end
